@@ -1,0 +1,172 @@
+.mainHeader {
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background-color: white;
+    padding: 0 20px;
+}
+
+/* No seu arquivo HeaderApp.css */
+.closing {
+    animation: slideUp 0.3s ease forwards;
+}
+
+.optionsMenu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: 180px;
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(-10px); /* Movido ligeiramente para cima */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Transição suave */
+    pointer-events: none; /* Impede interações quando oculto */
+}
+
+.optionsMenu.show {
+    opacity: 1; /* Visível */
+    transform: translateY(0); /* Move para a posição original */
+    pointer-events: auto; /* Permite interações */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    height: 25px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color: #eee;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    font-family: 'Open Sans';
+    font-size: 12px;
+    margin-left: 5px;
+    background-color: transparent;
+}
+
+.search-icon {
+    color: #888;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.icon-button:hover {
+    color: #007bff;
+}
+
+.leftAround {
+    position: absolute;
+    align-items: center;
+    display: flex;
+    left: 30px;
+    gap: 20px;
+}
+
+#linkLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.centerAround {
+    display: flex;
+    gap: 5px;
+}
+
+#mainLogo {
+    width: 150px;
+}
+
+.nameUser,
+.pUser {
+    margin: 0;
+}
+
+.pUser {
+    font-size: 10px;
+}
+
+.nameUser {
+    font-size: 13px;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+.tester {
+    display: none;
+}
+
+@media screen and (max-width: 930px) {
+    .tester {
+        position: absolute;
+        right: 60px;
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width: 930px) {
+    .mainHeader {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        background-color: white;
+        padding: 0 20px;
+    }
+
+    .leftAround {
+        display: none;
+    }
+
+    .leftAroundMobile {
+    }
+
+    .centerAround {
+        display: none;
+    }
+
+    .centerAroundMobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .mobileMenu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+    }
+}

@@ -1,0 +1,106 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+button, select {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.terms-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.testers {
+  position: relative;
+}
+
+.skills-container6 {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.centerP {
+  text-align: center;
+}
+
+.buttonsOnOff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.popup-content {
+  background-color: rgba(255, 255, 255, 0.6); /* Cor de fundo semi-transparente */
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 300px;
+  width: 100%;
+  backdrop-filter: blur(10px); /* Efeito de desfoque no fundo */
+  -webkit-backdrop-filter: blur(10px); /* Para compatibilidade com navegadores baseados em WebKit */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Borda para definir a área do popup */
+}
+
+.popup-content h3 {
+  margin-top: 0;
+}
+
+.popup-content button {
+  margin-top: 20px;
+
+}
+
+.midia {
+  position: relative;
+  width: 100%;
+}
+
+button {
+  padding: 10px;
+  color: white;
+  border-radius: 40px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #1a67b9;
+  }
+}
+
+.password-toggle-icon {
+  position: absolute;
+  right: 0;
+  margin-top: 6px;
+  margin-right: 15px;
+  color: #333;
+  font-size: 18px;
+  cursor: pointer;
+  transform: all 0.3s ease;
+}
+
+.password-toggle-icon:hover {
+  color: #007bff;
+}
+
+.bolder {
+  color: #007bff;
+}

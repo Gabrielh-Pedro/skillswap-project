@@ -1,0 +1,89 @@
+#createUserName {
+  margin: 0;
+  font-size: 15px;
+}
+
+#sublimUserName {
+  font-size: 12px;
+  margin: 0;
+  margin-top: 4px;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.skills-container-mobile {
+  display: none;
+}
+
+.skills-container-mobile2 {
+  display: none;
+}
+
+/* Estilo para a lista de skills */
+.skills-container5 {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  /* Espaço entre os itens */
+  margin: 5px 0;
+  justify-content: flex-end;
+}
+
+.skill-item5 {
+  background-color: #007bff;
+  /* Cor de fundo dos itens */
+  color: white;
+  /* Cor do texto */
+  padding: 8px 12px;
+  /* Espaçamento interno */
+  border-radius: 20px;
+  /* Bordas arredondadas */
+  font-size: 10px;
+  /* Tamanho da fonte */
+  font-family: 'Lato', sans-serif;
+  /* Fonte */
+  cursor: pointer;
+  text-align: center;
+  /* Alinha o texto ao centro */
+  transition: background-color 0.3s, transform 0.3s;
+  /* Transição para efeito hover */
+}
+
+.skill-item5:hover {
+  background-color: #0056b3;
+  /* Cor ao passar o mouse */
+  transform: scale(1.05);
+  /* Leve aumento ao passar o mouse */
+}
+
+@media screen and (max-width: 465px) {
+  .skills-container5 {
+    display: none;
+  }
+
+  .skills-container-mobile {
+    align-items: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    /* Espaço entre os itens */
+    margin: 0px 0;
+    margin-bottom: 15px;
+  }
+
+  .skills-container-mobile2 {
+    align-items: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    /* Espaço entre os itens */
+    margin: 0px 0;
+    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

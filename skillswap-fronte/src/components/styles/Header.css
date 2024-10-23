@@ -1,0 +1,106 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    height: 100px;
+    padding-right: 80px;
+    background-color: transparent;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-menu ul li {
+    display: inline;
+    position: relative;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+    transform: translateX(2px);
+}
+
+.nav-menu ul li a.active {
+    color: #007bff;
+    font-weight: 600;
+}
+
+.social-icons {
+    position: absolute;
+    right: 80px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+    transform: translateX(-2px);
+}
+
+.icon-menu {
+    display: none;
+}
+
+@media (max-width: 760px) {
+
+    .header {
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        justify-content: space-around;
+        height: 100px;
+        padding-right: 10px;
+        background-color: transparent;
+    }
+
+    .nav-menu {
+      display: none; /* Esconde o menu de navegação */
+    }
+  
+    .social-icons {
+        display: none;
+    }
+  
+    .icon-menu {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 20px;
+      padding: 0 20px; /* Espaçamento lateral */
+    }
+  
+    .icon-menu a {
+      font-size: 20px; /* Aumenta o tamanho dos ícones */
+      color: #333;
+      transition: all 0.3s ease;
+    }
+  
+    .icon-menu a:hover {
+      color: #007bff;
+      transform: translateY(-2px); /* Sutil efeito de hover */
+    }
+  }
+  
+  
